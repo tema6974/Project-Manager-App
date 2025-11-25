@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?><data>
+    <clients>
+        <client>
+            <client_id>44</client_id>
+            <client_name>Joe Baiden</client_name>
+        </client>
+        <client>
+            <client_id>46</client_id>
+            <client_name>Donald McDonald</client_name>
+        </client>
+        <client>
+            <client_id>47</client_id>
+            <client_name>Elon Mask</client_name>
+        </client>
+        <client>
+            <client_id>51</client_id>
+            <client_name>Jack Vorobey</client_name>
+        </client>
+    </clients>
+    <employees>
+        <employee>
+            <employee_id>65</employee_id>
+            <employee_name>Eminem</employee_name>
+        </employee>
+        <employee>
+            <employee_id>95</employee_id>
+            <employee_name>OleG NICHIPARENKA</employee_name>
+        </employee>
+        <employee>
+            <employee_id>96</employee_id>
+            <employee_name>Alisher Morgen</employee_name>
+        </employee>
+        <employee>
+            <employee_id>106</employee_id>
+            <employee_name>еуееуеуеуеуе</employee_name>
+        </employee>
+        <employee>
+            <employee_id>107</employee_id>
+            <employee_name>тууе</employee_name>
+        </employee>
+    </employees>
+    <projects>
+        <project>
+            <project_id>40</project_id>
+            <project_name>New rap album</project_name>
+            <project_status>Активный</project_status>
+            <project_due_date>2024-12-15</project_due_date>
+            <project_end_date/>
+            <client>
+                <client_id>44</client_id>
+                <client_name>Joe Baiden</client_name>
+            </client>
+            <employees>
+                <employee>
+                    <employee_id>65</employee_id>
+                    <employee_name>Eminem</employee_name>
+                </employee>
+                <employee>
+                    <employee_id>95</employee_id>
+                    <employee_name>OleG NICHIPARENKA</employee_name>
+                </employee>
+            </employees>
+            <tasks>
+                <task>
+                    <task_id>69</task_id>
+                    <task_name>lyrics</task_name>
+                    <task_description>bla bla bla</task_description>
+                    <task_status>Просрочено</task_status>
+                    <due_date>2024-12-15</due_date>
+                    <assigned_employee>
+                        <employee_id>65</employee_id>
+                        <employee_name>Eminem</employee_name>
+                    </assigned_employee>
+                </task>
+            </tasks>
+        </project>
+        <project>
+            <project_id>67</project_id>
+            <project_name>test</project_name>
+            <project_status>Приостановлен</project_status>
+            <project_due_date>2024-10-10</project_due_date>
+            <project_end_date>2024-10-09</project_end_date>
+            <client>
+                <client_id>46</client_id>
+                <client_name>Donald McDonald</client_name>
+            </client>
+            <employees>
+                <employee>
+                    <employee_id>65</employee_id>
+                    <employee_name>Eminem</employee_name>
+                </employee>
+                <employee>
+                    <employee_id>95</employee_id>
+                    <employee_name>OleG NICHIPARENKA</employee_name>
+                </employee>
+                <employee>
+                    <employee_id>96</employee_id>
+                    <employee_name>Alisher Morgen</employee_name>
+                </employee>
+            </employees>
+            <tasks>
+                <task>
+                    <task_id>118</task_id>
+                    <task_name>test</task_name>
+                    <task_description/>
+                    <task_status>В процессе</task_status>
+                    <due_date>3010-10-10</due_date>
+                    <assigned_employee>
+                        <employee_id>95</employee_id>
+                        <employee_name>OleG NICHIPARENKA</employee_name>
+                    </assigned_employee>
+                </task>
+                <task>
+                    <task_id>119</task_id>
+                    <task_name>пйшипйшгип</task_name>
+                    <task_description/>
+                    <task_status>Завершено</task_status>
+                    <due_date>1010-10-10</due_date>
+                    <assigned_employee>
+                        <employee_id>96</employee_id>
+                        <employee_name>Alisher Morgen</employee_name>
+                    </assigned_employee>
+                </task>
+                <task>
+                    <task_id>121</task_id>
+                    <task_name>еуеуууу</task_name>
+                    <task_description/>
+                    <task_status>Завершено</task_status>
+                    <due_date>1010-10-10</due_date>
+                    <assigned_employee>
+                        <employee_id>106</employee_id>
+                        <employee_name>еуееуеуеуеуе</employee_name>
+                    </assigned_employee>
+                </task>
+            </tasks>
+        </project>
+        <project>
+            <project_id>68</project_id>
+            <project_name>уеее</project_name>
+            <project_status>Активный</project_status>
+            <project_due_date>1010-10-10</project_due_date>
+            <project_end_date/>
+            <client>
+                <client_id>47</client_id>
+                <client_name>Elon Mask</client_name>
+            </client>
+            <employees/>
+            <tasks/>
+        </project>
+        <project>
+            <project_id>71</project_id>
+            <project_name>tewgwgqg</project_name>
+            <project_status>Завершен</project_status>
+            <project_due_date>2025-10-10</project_due_date>
+            <project_end_date>2024-12-19</project_end_date>
+            <client>
+                <client_id>51</client_id>
+                <client_name>Jack Vorobey</client_name>
+            </client>
+            <employees>
+                <employee>
+                    <employee_id>106</employee_id>
+                    <employee_name>еуееуеуеуеуе</employee_name>
+                </employee>
+                <employee>
+                    <employee_id>107</employee_id>
+                    <employee_name>тууе</employee_name>
+                </employee>
+            </employees>
+            <tasks>
+                <task>
+                    <task_id>122</task_id>
+                    <task_name>egqgqg</task_name>
+                    <task_description>gqgqff</task_description>
+                    <task_status>Просрочено</task_status>
+                    <due_date>2010-10-10</due_date>
+                    <assigned_employee>
+                        <employee_id>107</employee_id>
+                        <employee_name>тууе</employee_name>
+                    </assigned_employee>
+                </task>
+            </tasks>
+        </project>
+    </projects>
+    <tasks>
+        <task>
+            <task_id>69</task_id>
+            <task_name>lyrics</task_name>
+            <task_description>bla bla bla</task_description>
+            <task_status>Просрочено</task_status>
+            <due_date>2024-12-15</due_date>
+            <project>
+                <project_id>40</project_id>
+                <project_name>New rap album</project_name>
+            </project>
+            <assigned_employee>
+                <employee_id>65</employee_id>
+                <employee_name>Eminem</employee_name>
+            </assigned_employee>
+        </task>
+        <task>
+            <task_id>118</task_id>
+            <task_name>test</task_name>
+            <task_description/>
+            <task_status>В процессе</task_status>
+            <due_date>3010-10-10</due_date>
+            <project>
+                <project_id>67</project_id>
+                <project_name>test</project_name>
+            </project>
+            <assigned_employee>
+                <employee_id>95</employee_id>
+                <employee_name>OleG NICHIPARENKA</employee_name>
+            </assigned_employee>
+        </task>
+        <task>
+            <task_id>119</task_id>
+            <task_name>пйшипйшгип</task_name>
+            <task_description/>
+            <task_status>Завершено</task_status>
+            <due_date>1010-10-10</due_date>
+            <project>
+                <project_id>67</project_id>
+                <project_name>test</project_name>
+            </project>
+            <assigned_employee>
+                <employee_id>96</employee_id>
+                <employee_name>Alisher Morgen</employee_name>
+            </assigned_employee>
+        </task>
+        <task>
+            <task_id>121</task_id>
+            <task_name>еуеуууу</task_name>
+            <task_description/>
+            <task_status>Завершено</task_status>
+            <due_date>1010-10-10</due_date>
+            <project>
+                <project_id>67</project_id>
+                <project_name>test</project_name>
+            </project>
+            <assigned_employee>
+                <employee_id>106</employee_id>
+                <employee_name>еуееуеуеуеуе</employee_name>
+            </assigned_employee>
+        </task>
+        <task>
+            <task_id>122</task_id>
+            <task_name>egqgqg</task_name>
+            <task_description>gqgqff</task_description>
+            <task_status>Просрочено</task_status>
+            <due_date>2010-10-10</due_date>
+            <project>
+                <project_id>71</project_id>
+                <project_name>tewgwgqg</project_name>
+            </project>
+            <assigned_employee>
+                <employee_id>107</employee_id>
+                <employee_name>тууе</employee_name>
+            </assigned_employee>
+        </task>
+    </tasks>
+</data>

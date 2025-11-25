@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+    name="projects" pageWidth="842" pageHeight="595" orientation="Landscape" whenNoDataType="AllSectionsNoDetail"
+    columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+    
+    <style name="Base" isDefault="true" fontName="DejaVu Serif" fontSize="10" pdfFontName="fonts/DejaVu Serif.ttf" pdfEncoding="Identity-H" isPdfEmbedded="true"/>
+    
+    <style name="Table_CH" mode="Opaque" backcolor="#BFE1FF" style="Base">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    
+    <style name="Table_TD" mode="Opaque" backcolor="#FFFFFF" style="Base">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+
+    <queryString language="xPath">
+        <![CDATA[/data/projects/project]]>
+    </queryString>
+
+    <field name="project_id" class="java.lang.Integer">
+        <fieldDescription><![CDATA[project_id]]></fieldDescription>
+    </field>
+    <field name="project_name" class="java.lang.String">
+        <fieldDescription><![CDATA[project_name]]></fieldDescription>
+    </field>
+    <field name="project_status" class="java.lang.String">
+        <fieldDescription><![CDATA[project_status]]></fieldDescription>
+    </field>
+    <field name="project_due_date" class="java.lang.String">
+        <fieldDescription><![CDATA[project_due_date]]></fieldDescription>
+    </field>
+    <field name="project_end_date" class="java.lang.String">
+        <fieldDescription><![CDATA[project_end_date]]></fieldDescription>
+    </field>
+    <field name="client_name" class="java.lang.String">
+        <fieldDescription><![CDATA[client/client_name]]></fieldDescription>
+    </field>
+    <field name="employee_names" class="java.lang.String">
+        <fieldDescription><![CDATA[employees/employee/employee_name]]></fieldDescription>
+    </field>
+    <field name="employee_names2" class="java.lang.String">
+        <fieldDescription><![CDATA[employees/employee[2]/employee_name]]></fieldDescription>
+    </field>
+    <field name="employee_names3" class="java.lang.String">
+        <fieldDescription><![CDATA[employees/employee[3]/employee_name]]></fieldDescription>
+    </field>
+    <field name="task_names" class="java.lang.String">
+        <fieldDescription><![CDATA[tasks/task/task_name]]></fieldDescription>
+    </field>
+    <field name="task_names2" class="java.lang.String">
+        <fieldDescription><![CDATA[tasks/task[2]/task_name]]></fieldDescription>
+    </field>
+    <field name="task_names3" class="java.lang.String">
+        <fieldDescription><![CDATA[tasks/task[3]/task_name]]></fieldDescription>
+    </field>
+
+    <variable name="EMPLOYEE_LIST" class="java.lang.String">
+        <variableExpression>
+        <![CDATA[($F{employee_names} != null ? $F{employee_names} : "") + 
+                 ($F{employee_names2} != null ? ($F{employee_names}.length() > 0 ? ", " : "") + $F{employee_names2} : "") +
+                 ($F{employee_names3} != null ? ($F{employee_names}.length() > 0 || $F{employee_names2} != null ? ", " : "") + $F{employee_names3} : "")]]>
+        </variableExpression>
+    </variable>
+
+    <variable name="TASK_LIST" class="java.lang.String">
+        <variableExpression>
+        <![CDATA[($F{task_names} != null ? $F{task_names} : "") + 
+                 ($F{task_names2} != null ? ($F{task_names}.length() > 0 ? ", " : "") + $F{task_names2} : "") +
+                 ($F{task_names3} != null ? ($F{task_names}.length() > 0 || $F{task_names2} != null ? ", " : "") + $F{task_names3} : "")]]>
+        </variableExpression>
+    </variable>
+
+    <title>
+        <band height="40">
+            <staticText>
+                <reportElement x="0" y="0" width="802" height="40"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="14" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Отчет по проектам]]></text>
+            </staticText>
+        </band>
+    </title>
+
+    <columnHeader>
+        <band height="30">
+            <staticText>
+                <reportElement style="Table_CH" x="0" y="0" width="50" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[ID]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Table_CH" x="50" y="0" width="150" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Название проекта]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Table_CH" x="200" y="0" width="80" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Статус]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Table_CH" x="280" y="0" width="90" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Дата сдачи]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Table_CH" x="370" y="0" width="90" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Дата окончания]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Table_CH" x="460" y="0" width="90" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Клиент]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Table_CH" x="550" y="0" width="150" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Сотрудники]]></text>
+            </staticText>
+            <staticText>
+                <reportElement style="Table_CH" x="700" y="0" width="102" height="30"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font isBold="true"/>
+                </textElement>
+                <text><![CDATA[Задачи]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+
+    <detail>
+        <band height="40">
+            <textField isBlankWhenNull="true">
+                <reportElement style="Table_TD" x="0" y="0" width="50" height="40"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{project_id}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement style="Table_TD" x="50" y="0" width="150" height="40"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <paragraph leftIndent="5"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{project_name}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement style="Table_TD" x="200" y="0" width="80" height="40"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{project_status}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement style="Table_TD" x="280" y="0" width="90" height="40"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{project_due_date}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement style="Table_TD" x="370" y="0" width="90" height="40"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle"/>
+                <textFieldExpression><![CDATA[$F{project_end_date}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement style="Table_TD" x="460" y="0" width="90" height="40"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <paragraph leftIndent="5"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{client_name}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement style="Table_TD" x="550" y="0" width="150" height="40"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <paragraph leftIndent="5"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{EMPLOYEE_LIST}]]></textFieldExpression>
+            </textField>
+            <textField isBlankWhenNull="true">
+                <reportElement style="Table_TD" x="700" y="0" width="102" height="40"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <paragraph leftIndent="5"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{TASK_LIST}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>
